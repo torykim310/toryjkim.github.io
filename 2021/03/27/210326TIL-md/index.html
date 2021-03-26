@@ -23,16 +23,20 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"toryjkim.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tory Blog">
-<meta property="og:url" content="https://toryjkim.github.io/archives/index.html">
+<meta name="description" content="Tree특징 그래프의 특수한 형태 모든 노드는 서로 연결되어 있다.(따로 떨어져 외딴섬에 있는 노드는 없음) 방향성을 가지고 있다. 하나의 노드에서 다른 노드로 이동하는 경로는 유일핟. Acyclic하다. (비순환)  용어 root node: 최상위 노드 (가장 낮은 level에 있는 Node) child node: 자식 노드 parent node: 부모">
+<meta property="og:type" content="article">
+<meta property="og:title" content="210326TIL.md">
+<meta property="og:url" content="https://toryjkim.github.io/2021/03/27/210326TIL-md/index.html">
 <meta property="og:site_name" content="Tory Blog">
+<meta property="og:description" content="Tree특징 그래프의 특수한 형태 모든 노드는 서로 연결되어 있다.(따로 떨어져 외딴섬에 있는 노드는 없음) 방향성을 가지고 있다. 하나의 노드에서 다른 노드로 이동하는 경로는 유일핟. Acyclic하다. (비순환)  용어 root node: 최상위 노드 (가장 낮은 level에 있는 Node) child node: 자식 노드 parent node: 부모">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-26T16:41:43.000Z">
+<meta property="article:modified_time" content="2021-03-26T16:56:25.648Z">
 <meta property="article:author" content="Tory Kim">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://toryjkim.github.io/archives/">
+<link rel="canonical" href="https://toryjkim.github.io/2021/03/27/210326TIL-md/">
 
 
 <script class="page-configurations">
@@ -40,11 +44,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
-<title>Archive | Tory Blog</title>
+<title>210326TIL.md | Tory Blog</title>
   
 
 
@@ -130,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -143,6 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Tree"><span class="nav-number">1.</span> <span class="nav-text">Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%ED%8A%B9%EC%A7%95"><span class="nav-number">1.1.</span> <span class="nav-text">특징</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%9A%A9%EC%96%B4"><span class="nav-number">1.2.</span> <span class="nav-text">용어</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%A2%85%EB%A5%98"><span class="nav-number">1.3.</span> <span class="nav-text">종류</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%88%9C%ED%9A%8C"><span class="nav-number">1.4.</span> <span class="nav-text">순회</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%ED%83%90%EC%83%89"><span class="nav-number">1.5.</span> <span class="nav-text">탐색</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -184,109 +189,123 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 4 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://toryjkim.github.io/2021/03/27/210326TIL-md/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tory Kim">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tory Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          210326TIL.md
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="Created: 2021-03-27 01:41:43 / Modified: 01:56:25" itemprop="dateCreated datePublished" datetime="2021-03-27T01:41:43+09:00">2021-03-27</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h1><h2 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h2><ol>
+<li>그래프의 특수한 형태</li>
+<li>모든 노드는 서로 연결되어 있다.(따로 떨어져 외딴섬에 있는 노드는 없음)</li>
+<li>방향성을 가지고 있다.</li>
+<li>하나의 노드에서 다른 노드로 이동하는 경로는 유일핟.</li>
+<li>Acyclic하다. (비순환)</li>
+</ol>
+<h2 id="용어"><a href="#용어" class="headerlink" title="용어"></a>용어</h2><ol>
+<li>root node: 최상위 노드 (가장 낮은 level에 있는 Node)</li>
+<li>child node: 자식 노드</li>
+<li>parent node: 부모 노드</li>
+<li>leaf node(입새 노드): 자식 노드가 없는 노드</li>
+<li>Internal node(내부노드): leaf node 외의 노드</li>
+<li>edge: 연결선 (node의 수 - 1)</li>
+<li>path(경로): 두 노드를 연결하는 에지의 시퀀스</li>
+<li>level, depth: 루트 노드로부터 경로의 길이</li>
+<li>height: 트리의 높이로 가장 큰 레벨 값</li>
+</ol>
+<h2 id="종류"><a href="#종류" class="headerlink" title="종류"></a>종류</h2><ul>
+<li><p>정 이진 트리(Full Binary Tree, Perfect Binary Tree): leaf노드를 제외하고 모든 노드가 자식을 2개 가지고 있다.</p>
+</li>
+<li><p>완전 이진 트리(Complete Binary Tree): 왼쪽부터 순서대로 채워 나가는 트리</p>
+</li>
+<li><p>균형 이진 트리(Balanced Binary Tree):</p>
+</li>
+</ul>
+<ol>
+<li>skewed Tree: 한쪽 방향으로만 쭉 이어지는 트리</li>
+<li>Balanced Binary Tree: 임의의 규칙을 가지고 균형을 이루고 있는 트리</li>
+</ol>
+<h2 id="순회"><a href="#순회" class="headerlink" title="순회"></a>순회</h2><ul>
+<li>깊이 우선순회(preorder, Depth-First Traversal): node -&gt; left -&gt; right</li>
+<li>대칭 순회(Inorder, Symmetric Traversal): left -&gt; node -&gt; right</li>
+<li>후위 순회(Postorder): left -&gt; right -&gt; node</li>
+</ul>
+<h2 id="탐색"><a href="#탐색" class="headerlink" title="탐색"></a>탐색</h2><ul>
+<li><p>너비 우선탐색(Breath-First-search; BFS): 낮은 레벨부터 왼쪽부터 탐색</p>
+</li>
+<li><dl><dt>깊이 우선탐색(Depth-First-search; DFS):</dt><dd>node -&gt; left -&gt; right 순으로 탐색(left 자식 노드쪽으로 깊어지며 탐색함)</dd></dl></li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-03-27T01:41:43+09:00"
-              content="2021-03-27">
-          03-27
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/27/210326TIL-md/" itemprop="url">
-            <span itemprop="name">210326TIL.md</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/03/25/210325TIL/" rel="prev" title="210325TIL">
+                  <i class="fa fa-chevron-left"></i> 210325TIL
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-03-25T18:14:39+09:00"
-              content="2021-03-25">
-          03-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/25/210325TIL/" itemprop="url">
-            <span itemprop="name">210325TIL</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-03-25T16:31:06+09:00"
-              content="2021-03-25">
-          03-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/25/My-very-new-github-blog/" itemprop="url">
-            <span itemprop="name">My very new github blog</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-03-25T16:27:24+09:00"
-              content="2021-03-25">
-          03-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/25/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 
 <script>
