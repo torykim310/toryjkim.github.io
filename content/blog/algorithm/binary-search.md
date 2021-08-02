@@ -13,7 +13,7 @@ draft: false
 
 ## 1. 구현
 
-### 첫번째 구현(recursion)
+### recursion
 
 ```Python
 def binary_search(arr, v):
@@ -36,7 +36,7 @@ def binary_search(arr, v):
     return is_searched
 ```
 
-### 두번째 구현(iteration)
+### iteration
 
 ```Python
 import time
